@@ -10,11 +10,14 @@ const useStyles = makeStyles((theme) => ({
     boxShadow: "0 2px 15px #891f85",
     color: "white",
     height: "50px",
-    padding: "10px 7.500em",
+    padding: "10px 0",
     fontFamily: "'Roboto', sans-serif",
+    position: "fixed",
+    width: "100%",
   },
   nav_logo_con: {
     display: "flex",
+    justifyContent: "flex start",
 
     "& img": {
       width: "50px",
@@ -43,7 +46,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   nav_navLinks: {
-    width: "80%",
+    width: "50%",
     display: "flex",
     justifyContent: "flex-end",
     alignItems: "center",

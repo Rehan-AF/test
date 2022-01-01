@@ -2,8 +2,6 @@ import React from "react";
 import useStyles from "./FooterStyle";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import Discord from "../../assets/discord.png";
-import Button from "@material-ui/core/Button";
-import Icon from "@material-ui/core/Icon";
 
 function Footer() {
   const classes = useStyles();

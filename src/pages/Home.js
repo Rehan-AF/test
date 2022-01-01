@@ -1,9 +1,13 @@
 import React from "react";
-
+import SlothMint from "../components/slothsMint/SlothMint";
+import CardNumber from "../components/saleNumbers/CardNumber";
+import MintCounter from "../components/mintCounter/MintCounter";
 function Home() {
   return (
     <div>
-      <h1>Home</h1>
+      <SlothMint />
+      <CardNumber />
+      <MintCounter />
     </div>
   );
 }
