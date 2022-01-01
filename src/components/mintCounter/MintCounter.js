@@ -4,7 +4,10 @@ import astro from "../../assets/mint/astro.png";
 
 function MintCounter() {
   const classes = useStyles();
-  const [tcounter, setTcounter] = useState();
+  const [tcounter, setTcounter] = useState(1);
+  if (tcounter < 1) {
+    setTcounter(1);
+  }
   return (
     <>
       <div className={classes.mint_head}>
@@ -22,9 +25,9 @@ function MintCounter() {
               0.045 ETH. 4289 / 9999 SLOTHz minted
             </h3>
             <div className={classes.counters}>
-              <button>-</button>
-              <p>1</p>
-              <button>+</button>
+              <button onClick={() => setTcounter(tcounter - 1)}>-</button>
+              <p>{tcounter >= 0 ? tcounter : "1"}</p>
+              <button onClick={() => setTcounter(tcounter + 1)}>+</button>
             </div>
             <div className={classes.nav_wal_btn}>
               <button className={classes.navbar_button}>
