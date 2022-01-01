@@ -1,13 +1,13 @@
 import React from "react";
 import useStyles from "./CarouselStyle";
 import CarouselData from "./CarouselData";
-function CarouselCard() {
+function CarouselCard(props) {
   const classes = useStyles();
 
   return (
     <>
       <div className={classes.carousel_container}>
-        {CarouselData.map((item) => {
+        {CarouselData.slice(0, props.legth).map((item) => {
           return (
             <div className={classes.carousel_card}>
               <img src={item.img} />
