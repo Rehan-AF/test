@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import useStyles from "./MintStyle";
 import astro from "../../assets/mint/astro.png";
+import CarouselCard from "../carousel/CarouselCard";
 
 function MintCounter() {
   const classes = useStyles();
@@ -42,6 +43,9 @@ function MintCounter() {
           <div className={classes.astro_div}>
             <img src={astro} />
           </div>
+        </div>
+        <div className={classes.mint_card}>
+          <CarouselCard />
         </div>
       </div>
     </>
