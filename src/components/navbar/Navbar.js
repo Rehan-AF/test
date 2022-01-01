@@ -29,9 +29,9 @@ function Navbar() {
               );
             })}
           </ul>
-        </div>
-        <div className={classes.nav_wal_btn}>
-          <button>Connect to Wallet</button>
+          <div className={classes.nav_wal_btn}>
+            <button className={classes.navbar_button}>Connect to Wallet</button>
+          </div>
         </div>
       </div>
     </>
