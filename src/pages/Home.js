@@ -3,6 +3,7 @@ import SlothMint from "../components/slothsMint/SlothMint";
 import CardNumber from "../components/saleNumbers/CardNumber";
 import MintCounter from "../components/mintCounter/MintCounter";
 import Discord from "../components/discord/Discord";
+import Team from "../components/teams/Team";
 function Home() {
   return (
     <div>
@@ -10,6 +11,7 @@ function Home() {
       <CardNumber />
       <MintCounter />
       <Discord />
+      <Team />
     </div>
   );
 }
