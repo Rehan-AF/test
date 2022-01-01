@@ -6,6 +6,11 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "space-between",
     backgroundColor: "#1e1f25",
     padding: "30px 7.500em",
+    boxShadow: "0 0 6px rgb(255 255 255 / 33%)",
+    [theme.breakpoints.down("sm")]: {
+      flexDirection: "column",
+      padding: "30px",
+    },
   },
   footer_details: {
     "& h3": {
@@ -44,6 +49,9 @@ const useStyles = makeStyles((theme) => ({
     },
     "& img": {
       width: "25px",
+    },
+    [theme.breakpoints.down("sm")]: {
+      justifyContent: "flex-start",
     },
   },
 }));

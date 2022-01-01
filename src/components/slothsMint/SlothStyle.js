@@ -36,6 +36,7 @@ const useStyles = makeStyles((theme) => ({
   },
   slothMint_img_con: {
     display: "flex",
+    flexWrap: "wrap",
     width: "100%",
     justifyContent: "center",
   },
