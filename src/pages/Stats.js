@@ -2,7 +2,7 @@ import React from "react";
 
 function Stats() {
   return (
-    <div>
+    <div style={{ padding: "100px" }}>
       <h1>Stats</h1>
     </div>
   );

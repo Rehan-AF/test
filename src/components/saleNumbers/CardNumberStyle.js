@@ -2,6 +2,7 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles((theme) => ({
   CardNumber_main_div: {
     display: "flex",
+    flexWrap: "wrap",
     justifyContent: "space-evenly",
 
     background: "#1e1f25",

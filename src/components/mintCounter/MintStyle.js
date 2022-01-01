@@ -6,6 +6,9 @@ const useStyles = makeStyles((theme) => ({
       "linear-gradient(111.31deg,#090a0b 7.84%,rgba(31,7,82,0) 94.81%),#1c0f1d",
     padding: "30px",
     color: "#fff",
+    [theme.breakpoints.down("sm")]: {
+      padding: "20px",
+    },
   },
   mint_details: {
     "& h1": {
@@ -23,6 +26,16 @@ const useStyles = makeStyles((theme) => ({
     display: "grid",
     gridTemplateColumns: "1fr 1fr",
     padding: "30px 60px",
+    [theme.breakpoints.down("md")]: {
+      gridTemplateColumns: "1fr",
+      padding: "30px 10px",
+    },
+    [theme.breakpoints.down("sm")]: {
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      flexDirection: "column",
+    },
   },
   mint_counter: {
     display: "flex",
@@ -39,6 +52,9 @@ const useStyles = makeStyles((theme) => ({
     },
     "& h3": {
       fontFamily: "'Roboto', sans-serif",
+    },
+    [theme.breakpoints.down("md")]: {
+      width: "90%",
     },
   },
   counters: {
@@ -109,6 +125,10 @@ const useStyles = makeStyles((theme) => ({
       marginTop: "100px",
       width: "430px",
       height: "400px",
+      [theme.breakpoints.down("sm")]: {
+        width: "220px",
+        height: "200px",
+      },
     },
   },
 }));
