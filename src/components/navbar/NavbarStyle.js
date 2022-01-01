@@ -15,6 +15,7 @@ const useStyles = makeStyles((theme) => ({
   },
   nav_logo_con: {
     display: "flex",
+
     "& img": {
       width: "50px",
       padding: "2px",
@@ -24,6 +25,7 @@ const useStyles = makeStyles((theme) => ({
   },
   nav_logo_details: {
     textAlign: "start",
+    marginLeft: "10px",
     "& h3": {
       margin: 0,
       fontSize: "24px",
@@ -44,18 +46,26 @@ const useStyles = makeStyles((theme) => ({
     width: "80%",
     display: "flex",
     justifyContent: "flex-end",
+    alignItems: "center",
     "& ul": {
       display: "flex",
       listStyle: "none",
     },
     "& li": {
-      margin: "0 10px",
       fontFamily: "'Roboto', sans-serif",
+      padding: "10px",
+      marginLeft: "5px",
+
       "& a": {
         textDecoration: "none",
         color: "#fff",
         textShadow: " 0 0 7px rgb(218 112 214 / 50%)",
-        fontSize: "16px",
+        fontSize: "17px",
+        "&:hover": {
+          transition: "all .5s ease-in",
+          marginLeft: "5px",
+          color: "orchid",
+        },
       },
     },
   },
@@ -76,6 +86,7 @@ const useStyles = makeStyles((theme) => ({
     color: "orchid",
     borderRadius: "50px",
     boxShadow: "0 0 15px rgb(218 112 214 / 30%)",
+    marginLeft: "20px",
     "&:hover": {
       transition: "all 1s ease-in",
       borderRadius: "20px",
